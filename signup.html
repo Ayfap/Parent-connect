@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Signup Page</title>
+    <script src="signup.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('home11.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end; /* Position content to the right */
+            align-items: center;
+        }
+        
+        .container {
+            width:400px;
+            height: 700px;
+            background: rgba(255, 255, 255, 0.7); /* Add background color with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px; /* Add margin to separate from the right edge */
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none; /* Remove link decoration */
+            color: #333; /* Change link color */
+        }
+    </style>
+    
+</head>
+<body>
+    <img src="home11.jpg">
+    <div class="container">
+     
+        <h2>Join<br> Us !</h2>
+         <br><br>
+        <form  name="registration" action="process-signup.php" method="post" onsubmit="return validateForm()">
+            <input type="text" name="username" placeholder="Enter your name" required><br><br>
+            <input type="email" name="email" placeholder="Enter your email" required><br><br>
+            <input type="password" name="password" placeholder="Enter your password" required><br><br>
+            <input type="password" name="password1" placeholder="Re-enter your password" required><br><br>
+            <label style="color:grey" >Enter birth year of your child</label><br><br>
+            <input type="date" name="dob" placeholder="Enter date of birth of your child " required><br><br>
+            <input type="submit" value="Sign up">
+        </form>
+        <centre>
+        <p>Already Registered? <a href="login.html">Login</a></p></centre>
+    </div>
+</body>
+</html>
